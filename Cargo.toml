@@ -1,0 +1,17 @@
+[package]
+name = "sm_issue"
+version = "0.1.0"
+authors = ["rebo <rebo@fakeemail.org>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2.50"
+slotmap = {path = "../stiff/slotmap/", features = ["unstable","serde"] }
+serde = "1.0.99"
+serde_json = "1.0.40"
+
